@@ -4,7 +4,7 @@ import re
 from sys import argv
 from typing import Optional
 
-from Tianabot import (
+from NICK_FURY import (
     ALLOW_EXCL,
     CERT_PATH,
     DONATION_LINK,
@@ -708,9 +708,9 @@ def migrate_chats(update: Update, context: CallbackContext):
 
 def main():
 
-    if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
+    if SUPPORT_CHAT is not None and isinstance(kochi_hevan, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "I AM BACK AGAIN")
+            dispatcher.bot.sendMessage(f"@kochi_hevan", "I AM BACK AGAIN")
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!"
