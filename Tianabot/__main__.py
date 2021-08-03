@@ -80,18 +80,18 @@ def get_readable_time(seconds: int) -> str:
 
 
 
-PM_START_TEXT = f"""Hello, My Name is {BOT_NAME}
+PM_START_TEXT = f"""Hello, My Name is {NICK_FURY}
 
 Hey , I am a Group Manager,
 Made specially for Managing Groups.
 
-This Probot was Created by [ℙℝ𝕀ℕℂ𝔼](https://t.me/devilsdad_prince)
+This Probot was Created by [GALACTUS](https://t.me/god_of_marvels)
 Click /help or use button below to find out more about how to use me to my full potential."""
 
 buttons = [
     [
         InlineKeyboardButton(
-            text="➕️ 𝐀𝐃𝐃 ༒ 𝙏𝙄𝘼𝙉𝘼 ༒ 𝐓𝐎 𝐘𝐎𝐔𝐑 𝐆𝐑𝐎𝐔𝐏 ➕️", url=f"t.me/{BOT_USERNAME}?startgroup=true"),
+            text="➕️ 𝐀𝐃𝐃 ༒ NICK_FURY༒ 𝐓𝐎 𝐘𝐎𝐔𝐑 𝐆𝐑𝐎𝐔𝐏 ➕️", url=f"t.me/Nick_Furybot?startgroup=true"),
     ],
     [
         InlineKeyboardButton(text="📱𝐈𝐍𝐅𝐎", callback_data="masha_"),
@@ -99,16 +99,16 @@ buttons = [
     ],
    [
         InlineKeyboardButton(
-            text="🎵 𝐂𝐇𝐀𝐓𝐓𝐈𝐍𝐆 𝐆𝐑𝐎𝐔𝐏 🎧", url=f"http://t.me/{CHAT_GROUP}")
+            text="🎵 𝐂𝐇𝐀𝐓𝐓𝐈𝐍𝐆 𝐆𝐑𝐎𝐔𝐏 🎧", url=f"http://t.me/kochi_hevan")
    ],
    [
         InlineKeyboardButton(
-            text="✨ 𝐎𝐖𝐍𝐄𝐑 ✨", url=f"http://t.me/{OWNER_USERNAME}"),
+            text="✨ 𝐎𝐖𝐍𝐄𝐑 ✨", url=f"http://t.me/@god_of_marvels"),
         InlineKeyboardButton(
-            text="⚜️ 𝐂𝐇𝐀𝐍𝐍𝐄𝐋 ⚜️", url=f"https://t.me/{BOT_CHANNEL}"),
+            text="⚜️ 𝐂𝐇𝐀𝐍𝐍𝐄𝐋 ⚜️", url=f"https://t.me/NICK_FURY_AREA"),
     ],
     [  
-        InlineKeyboardButton(text="👥 𝐒𝐔𝐏𝐏𝐎𝐑𝐓 𝐆𝐑𝐎𝐔𝐏 👥", url=f"https://t.me/{SUPPORT_CHAT}"),
+        InlineKeyboardButton(text="👥 𝐒𝐔𝐏𝐏𝐎𝐑𝐓 𝐆𝐑𝐎𝐔𝐏 👥", url=f"https://t.me/kochi_hevan"),
     ], 
     
 ]
@@ -116,7 +116,7 @@ buttons = [
 TIANA_IMG = f"{ALIVE_PIC}"
 
 HELP_STRINGS = f"""
-Hey There! My Name is {BOT_NAME}
+Hey There! My Name is {NICK_FURY}
 
 I'm a Heroine For Fun and help admins to manage their groups! Have a look at the following for an idea of some of the things I can help you with.
 
@@ -147,7 +147,7 @@ CHAT_SETTINGS = {}
 USER_SETTINGS = {}
 
 for module_name in ALL_MODULES:
-    imported_module = importlib.import_module("Tianabot.modules." + module_name)
+    imported_module = importlib.import_module("NICK_FURYBOT.modules." + module_name)
     if not hasattr(imported_module, "__mod_name__"):
         imported_module.__mod_name__ = imported_module.__name__
 
